@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
 using WebApplicationForTesting.Resources;
+using WebApplicationForTesting.Services;
 
 namespace WebApplicationForTesting
 {
@@ -29,6 +30,7 @@ namespace WebApplicationForTesting
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<LocService>();
+            services.AddTransient<IMessageService, MessageService>();
             services.AddLocalization(options => options.ResourcesPath = "Resources");
             services.Configure<RequestLocalizationOptions>(
                 options =>

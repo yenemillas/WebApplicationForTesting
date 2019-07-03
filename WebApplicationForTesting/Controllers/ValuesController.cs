@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebApplicationForTesting.Resources;
+using WebApplicationForTesting.Services;
 
 namespace WebApplicationForTesting.Controllers
 {
@@ -11,11 +12,12 @@ namespace WebApplicationForTesting.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        private readonly LocService _locService;
 
-        public ValuesController(LocService locService)
+        private readonly IMessageService _messageService;
+
+        public ValuesController( IMessageService messageService)
         {
-            _locService = locService;
+            _messageService = messageService;
         }
 
 
@@ -23,13 +25,7 @@ namespace WebApplicationForTesting.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-
-            var resourceName = "Customer";
-
-            var fr = _locService.GetLocalized(resourceName, new System.Globalization.CultureInfo("fr-FR"));
-            var us = _locService.GetLocalized(resourceName, new System.Globalization.CultureInfo("us-US"));
-
-            return new string[] { fr, us };
+            return Ok(_messageService.GetMessage(Models.MessageTypeEnum.Type1, new System.Globalization.CultureInfo("fr-FR")));
         }
 
        

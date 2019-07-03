@@ -117,70 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Assistance_resources" xml:space="preserve">
-    <value>Assistance for resources</value>
+  <data name="Type1Message" xml:space="preserve">
+    <value>Type1Message_Us</value>
   </data>
-  <data name="Assistance_resources_revision" xml:space="preserve">
-    <value>Assistance for revision resources</value>
+  <data name="Type2Message" xml:space="preserve">
+    <value>Type2Message_Us</value>
   </data>
-  <data name="Back_from_qc" xml:space="preserve">
-    <value>Back from QC:</value>
-  </data>
-  <data name="Back_from_transl" xml:space="preserve">
-    <value>Back from Transl:</value>
-  </data>
-  <data name="Customer" xml:space="preserve">
-    <value>Customer:</value>
-  </data>
-  <data name="Customer_feedback" xml:space="preserve">
-    <value>Customer feedback:</value>
-  </data>
-  <data name="Delivery" xml:space="preserve">
-    <value>Delivery</value>
-  </data>
-  <data name="Equiv_Wordcount" xml:space="preserve">
-    <value>Equiv. Wordcount:</value>
-  </data>
-  <data name="Final_Delivery" xml:space="preserve">
-    <value>Final Delivery:</value>
-  </data>
-  <data name="Instructions" xml:space="preserve">
-    <value>Instructions:</value>
-  </data>
-  <data name="Languages" xml:space="preserve">
-    <value>Language(s):</value>
-  </data>
-  <data name="Launch" xml:space="preserve">
-    <value>Launch</value>
-  </data>
-  <data name="Path" xml:space="preserve">
-    <value>Path:</value>
-  </data>
-  <data name="Planning" xml:space="preserve">
-    <value>Planning:</value>
-  </data>
-  <data name="Platform" xml:space="preserve">
-    <value>Platform:</value>
-  </data>
-  <data name="Project_Code" xml:space="preserve">
-    <value>Project Code:</value>
-  </data>
-  <data name="Project_Data" xml:space="preserve">
-    <value>Project Data:</value>
-  </data>
-  <data name="Reviewer" xml:space="preserve">
-    <value>Reviewer:</value>
-  </data>
-  <data name="Start_translate" xml:space="preserve">
-    <value>Start Transl:</value>
-  </data>
-  <data name="Time_spent" xml:space="preserve">
-    <value>Time spent:</value>
-  </data>
-  <data name="Total_Wordcount" xml:space="preserve">
-    <value>Total Wordcount:</value>
-  </data>
-  <data name="Translator" xml:space="preserve">
-    <value>Translator:</value>
+  <data name="Type3Message" xml:space="preserve">
+    <value>Type3Message_Us</value>
   </data>
 </root>

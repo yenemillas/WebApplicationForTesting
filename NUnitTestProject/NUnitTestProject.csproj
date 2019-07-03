@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="..\WebApplicationForTesting\Resources\SharedResource.fr-FR.resx" Link="Resources\SharedResource.fr-FR.resx" />
+    <EmbeddedResource Include="..\WebApplicationForTesting\Resources\SharedResource.resx" Link="Resources\SharedResource.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
     <PackageReference Include="Moq" Version="4.12.0" />
     <PackageReference Include="NSubstitute" Version="4.2.0" />
@@ -17,6 +22,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebApplicationForTesting\WebApplicationForTesting.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>
